@@ -26,6 +26,12 @@ namespace Power2000.CommuCfg
         public APCI_DATA_S DATA;              // 数据信息
     }
 
+    public struct APCIDataInfo_S_BIG           //处理big遥信、遥测
+    {
+        public APCI_ASDU_S ASDU;            // 数据单元
+        public APCI_DATA_S DATA;              // 数据信息
+    }
+
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
     public struct APCIFileInfo_S           //处理遥信、遥测
     {
